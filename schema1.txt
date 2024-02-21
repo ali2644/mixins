@@ -1,0 +1,20 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"type":"object",
+	"description": "Mixin schema for delivery options.",
+	"properties":{
+		"coupon":{
+			"type": ["integer","null"],
+			"description":"A coupon associated with the product, providing a discount or special offer when applied during checkout."
+			},
+		"expiry_date":{
+			"type":["String"],
+			"format":"date-time",
+			"description":"The expiration date and time of the coupon."
+			},
+		"conditions":{
+			"type":["string","null"],
+			"description":"Any conditions or restrictions associated with the coupon."
+			}
+		}
+}
